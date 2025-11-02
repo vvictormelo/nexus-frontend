@@ -1,0 +1,88 @@
+# ================================
+# 📦 Nexus Frontend – .gitignore
+# ================================
+
+# 🧱 Dependências
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# ⚙️ Build / Output
+dist/
+build/
+.cache/
+.vite/
+coverage/
+vite.config.timestamp-*
+
+# 💅 Estilos e cache temporário
+*.css.map
+*.log
+*.tmp
+*.cache
+*.DS_Store
+Thumbs.db
+
+# 🧩 Ambiente / Configuração local
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+
+# ⚙️ VSCode / IDE
+.vscode/
+.idea/
+*.code-workspace
+
+# 🧪 Testes
+jest.config.js
+*.spec.ts
+*.spec.tsx
+*.test.ts
+*.test.tsx
+__tests__/
+coverage/
+
+# 📁 Sistema
+.DS_Store
+desktop.ini
+ehthumbs.db
+Icon?
+
+# 🔒 Segurança e chaves locais
+*.pem
+*.key
+*.crt
+*.pfx
+
+# 🚀 Supabase, n8n, API keys etc.
+supabase/.env
+supabase/.temp
+n8n/
+api_keys.json
+
+# 💾 Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# 🧠 Misc
+*.swp
+*.swo
+*.bak
+*.old
+*.orig
+*.rej
+
+# 🧱 IDE state
+*.history/
+.history/
+.husky/
+.lintstagedrc
+
+# 📦 Deploy e servidor
+server/
+*.tar.gz
