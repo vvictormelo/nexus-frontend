@@ -89,7 +89,7 @@ Cores principais:
 
 ## 📦 Próximos Passos
 
-- [ ] Integração com API Nexus Hub (Node/Nest)
+- [ ] Integração com API Nexus Hub (Nest.js)
 - [ ] Módulo de upload de documentos
 - [ ] Editor rich text para comunicados
 - [ ] Sistema de permissões por perfil
@@ -100,7 +100,7 @@ Cores principais:
 ## 👨‍💻 Desenvolvido por
 
 **Victor Melo**  
-Consultor de Implantação & Desenvolvedor Frontend  
+Tech & Data Solutions Builder
 
 ---
 
