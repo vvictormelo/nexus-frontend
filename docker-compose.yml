@@ -1,0 +1,45 @@
+# ==============================================
+# 🐳 Nexus Frontend – docker-compose.yml
+# ==============================================
+version: "3.9"
+
+services:
+  nexus-frontend:
+    # Nome do container
+    container_name: nexus-frontend
+
+    # Builda a imagem usando o Dockerfile local
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    # Mapeia a porta 80 do container para a porta 80 da VPS
+    ports:
+      - "80:80"
+
+    # Reinicia automaticamente se o container parar
+    restart: always
+
+    # Define variáveis de ambiente (se quiser usar .env)
+    # environment:
+    #   - NODE_ENV=production
+
+    # Monta volumes opcionais (úteis para desenvolvimento)
+    # volumes:
+    #   - .:/app
+    #   - /app/node_modules
+
+    # Dependências e logs
+    stdin_open: true
+    tty: true
+
+    # Log driver (útil para VPS com log centralizado)
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "5"
+
+# ==============================================
+# Fim do arquivo
+# ==============================================
